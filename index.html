@@ -1,49 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <title>Lahiru | My Portfolio</title>
+    <link rel="stylesheet" href="app/style.css">
 </head>
-
 <body>
 
-    <nav>
-        <h2>My Portfolio</h2>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">LAHIRU<span>.</span></h2>
 
-        <div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="hero">
-
-        <div>
-            <h1>Hello, I'm Lahiru 👋</h1>
-
-            <h2>Software Engineering Student</h2>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Lahiru</h1>
+            <h2>I'm a <span>Web Developer</span></h2>
 
             <p>
-                I am a passionate Software Engineering student
-                interested in building modern and user-friendly
-                software applications.
+                I am a passionate web developer who loves creating
+                modern, creative and responsive websites.
             </p>
 
-            <button>View My Projects</button>
+            <div class="buttons">
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="#projects" class="btn btn-outline">My Projects</a>
+            </div>
         </div>
 
-        <div>
-            <img src="images/profile.jpg" alt="Profile Photo">
+        <div class="profile-image">
+            <img src="ChatGPT Image Sep 9, 2026, 05_45_46 PM.png" alt="My Profile">
         </div>
-
     </section>
 
-</body>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
 
+        <div class="about-content">
+            <p>
+                Hello! My name is Lahiru. I am an enthusiastic student
+                interested in web development and software engineering.
+                I enjoy learning new technologies and building creative
+                projects.
+            </p>
+
+            <div class="about-info">
+                <p><strong>Name:</strong> Lahiru</p>
+                <p><strong>Profession:</strong> Student / Developer</p>
+                <p><strong>Location:</strong> Sri Lanka</p>
+                <p><strong>Email:</strong> your@email.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Responsive Design</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <img src="weather.jpg" alt="Weather App">
+                <h3>Weather App</h3>
+                <p>A weather application using HTML, CSS and JavaScript.</p>
+                <a href="#" class="project-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="pos.jpg" alt="POS System">
+                <h3>POS System</h3>
+                <p>A responsive Point of Sale system for business management.</p>
+                <a href="#" class="project-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="chat.jpg" alt="Chat Application">
+                <h3>Chat Application</h3>
+                <p>A simple messaging application developed using Java.</p>
+                <a href="#" class="project-btn">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <h2 class="heading">My <span>Education</span></h2>
+
+        <div class="education-card">
+            <h3>School Education</h3>
+            <p>Your School Name</p>
+            <p>Completed School Education</p>
+        </div>
+
+        <div class="education-card">
+            <h3>Higher Education</h3>
+            <p>Your Institute Name</p>
+            <p>Software Engineering / IT</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message" rows="6"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Lahiru. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
